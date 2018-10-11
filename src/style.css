@@ -1,5 +1,14 @@
+@font-face {
+  font-family: 'Charmonman';
+  src:  url('./Charmonman-Regular.ttf') format('ttf'),
+        url('./Charmonman-Bold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
 .hello {
   color: red;
+  font-family: 'Charmonman';t
   background: url('./icon.svg');
 }
 
