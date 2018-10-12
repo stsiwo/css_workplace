@@ -12,7 +12,20 @@ function component() {
 
   element.appendChild(btn);
 
+  
+  let element1 = document.createElement('div');
+  element1.innerHTML = _.join(['Hello', 'again'], ' ');
+
+  element.appendChild(element1);
+
   return element;
 }
 
 document.body.appendChild(component());
+
+if (module.hot) {
+  module.hot.accept('./print.js', function() {
+    console.log('Accepting the updated printMe module!');
+    printMe();
+  })
+}
