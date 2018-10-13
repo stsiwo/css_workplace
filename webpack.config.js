@@ -24,7 +24,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Output Management',
+      title: 'CSS Experiment',
       meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'}
     }),
     new webpack.HotModuleReplacementPlugin()
