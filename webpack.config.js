@@ -1,9 +1,36 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
-  entry: './src/index.js',
+  mode: 'development',
+  entry: {
+    app: './src/index.js'
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+    hot: true
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+  },
+  plugins: [
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+      title: 'Output Management',
+      meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'}
+    }),
+    new webpack.HotModuleReplacementPlugin()
+  ],
   output: {
-    filename: 'main.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
@@ -11,6 +38,7 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
+        include: path.resolve(__dirname, 'src'),
         use: [
           {
             loader: 'style-loader',
@@ -28,24 +56,28 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-          use: [
-            'file-loader'
-          ]
+        include: path.resolve(__dirname, 'src'),
+        use: [
+          'file-loader'
+        ]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
+        include: path.resolve(__dirname, 'src'),
         use: [
           'file-loader'
         ]
       },
       {
         test: /\.(csv|tsv)$/,
+        include: path.resolve(__dirname, 'src'),
         use: [
           'csv-loader'
         ]
       },
       {
         test: /\.xml$/,
+        include: path.resolve(__dirname, 'src'),
         use: [
           'xml-loader'
         ]
