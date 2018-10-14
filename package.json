@@ -20,20 +20,23 @@
   },
   "homepage": "https://github.com/stsiwo/css_workplace#readme",
   "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
     "autoprefixer": "^9.1.5",
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
     "csv-loader": "^3.0.2",
     "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
     "postcss-loader": "^3.0.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
-    "xml-loader": "^1.2.1",
-    "clean-webpack-plugin": "^0.1.19",
-    "html-webpack-plugin": "^3.2.0",
-    "webpack-dev-server": "^3.1.9"
+    "webpack-dev-server": "^3.1.9",
+    "xml-loader": "^1.2.1"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "@fortawesome/fontawesome-free": "^5.4.1",
     "lodash": "^4.17.11"
   }
