@@ -13,19 +13,13 @@ module.exports = {
     contentBase: './dist',
     hot: true
   },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      }
-    ]
-  },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'CSS Experiment',
-      meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'}
+      meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
+      template: 'src/index.html',
+      inject: true
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
