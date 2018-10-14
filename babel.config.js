@@ -11,6 +11,7 @@ const presets = [
       useBuiltIns: "usage",
     },
   ],
+  ["@babel/react"]
 ];
 
 module.exports = { presets };
