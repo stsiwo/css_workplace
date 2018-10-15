@@ -27,10 +27,15 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  resolve: {
+    mainFiles: ['index'],
+    modules: ['node_modules'],
+    extensions: ['.js', '.jsx']
+  },
   module: {
     rules: [
       {
-        test: /\.m?js$/,
+        test: /\.m?(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         include: path.resolve(__dirname, 'src'),
         use: {
@@ -52,6 +57,8 @@ module.exports = {
             loader: 'css-loader',
             options: {
               importLoaders: 1,
+              modules: true,
+              localIdentName: '[name]__[local]___[hash:base64:5]',
             }
           },
           {
