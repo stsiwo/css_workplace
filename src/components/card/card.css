@@ -1,0 +1,61 @@
+.container {
+  width: 200px;
+  height: 200px;
+  background: url("./cardBgImg.jpg");
+  /* background-image: linear-gradient(to bottom, transparent 60%, #FF9463), url("./cardBgImg.jpg"); */ 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 20px;
+  transition: background-image 1s;
+}
+
+.cardContainer {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: height 1s;
+  border-radius: 0 0 20px 20px;
+  background-image: linear-gradient(to bottom, transparent, #FF9463);
+}
+
+.upperText {
+  width: 100%;
+  height: 20px;
+  border-radius: 0 0 20px 20px;
+  transition: border-radius 1s;
+  text-align: center;
+}
+
+.upperText > span {
+  color: #EB4900;
+}
+
+.lowerText {
+  width: 100%;
+  height: 0px;
+  transition: height 1s;
+  border-radius: 0 0 20px 20px;
+}
+
+.lowerText > span {
+
+}
+
+.container:hover {
+    /* background-image: linear-gradient(to bottom, transparent 40%, #FF9463), url("./cardBgImg.jpg"); */
+}
+
+.container:hover > .cardContainer {
+  height: 80px;
+}
+
+.container:hover .upperText {
+  border-radius: 0;
+}
+
+.container:hover .lowerText {
+  height: 60px;
+}

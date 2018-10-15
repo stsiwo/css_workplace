@@ -1,7 +1,8 @@
 import './style.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SearchBox from './components/searchBox/SearchBox';
+// import SearchBox from './components/searchBox/SearchBox';
+import Card from './components/card/Card';
 
 // need to place to put html 
 // option 1: cast out html webpack plugin and insert html manually
@@ -15,7 +16,7 @@ import SearchBox from './components/searchBox/SearchBox';
 // </div>
 
 
-ReactDOM.render(<SearchBox />, document.getElementById("root"));
+ReactDOM.render(<Card />, document.getElementById("root"));
 
 if (module.hot) {
   module.hot.accept('./index.js', function() {
