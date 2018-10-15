@@ -6,7 +6,7 @@ this repo includes my css works listed below:
 
 ---
 
-### note
+### caveat
 
 * no vendor prefix for the sake of simplicity (please use [PostCSS](https://github.com/postcss/postcss) if necessary)
 
