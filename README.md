@@ -1,6 +1,8 @@
 # css_workplace
-experimental workplace for css
 
-index.html : html template
+this repo includes my css works listed below:
 
-use Chrome devtools to experiment css
+* [search box components](./src/components/searchBox)
+
+
+
