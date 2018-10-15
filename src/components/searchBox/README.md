@@ -2,5 +2,5 @@
 
 see how it works:
 
-![alt text](https://github.com/stsiwo/css_workplace/tree/master/assets/searchbox_demo.gif "Search Box Component")
+![Search Box Component](https://github.com/stsiwo/css_workplace/blob/master/assets/searchbox_demo.gif "Search Box Component")
 
