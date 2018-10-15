@@ -8,11 +8,12 @@
 .searchInput {
     border: none;
     background: #FF9463;
-    padding: 5%;
+    padding: 12px;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     border-radius: 25px;
+    outline: none;
 }
 
 .searchIcon {
@@ -30,4 +31,7 @@
     width: 100%;
 }
 
+.searchInput:focus {
+  padding-right: 50px;
+}
 
