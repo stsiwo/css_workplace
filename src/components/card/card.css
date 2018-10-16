@@ -19,6 +19,8 @@
   transition: height 1s;
   border-radius: 0 0 20px 20px;
   background-image: linear-gradient(to bottom, transparent, #FF9463);
+  text-align: center;
+  color: #EB4900;
 }
 
 .upperText {
@@ -26,26 +28,22 @@
   height: 20px;
   border-radius: 0 0 20px 20px;
   transition: border-radius 1s;
-  text-align: center;
+  font-size: 18px;
 }
 
-.upperText > span {
-  color: #EB4900;
-}
 
 .lowerText {
   width: 100%;
   height: 0px;
   transition: height 1s;
   border-radius: 0 0 20px 20px;
+  color:#EB4900; 
 }
 
-.lowerText > span {
-
-}
-
-.container:hover {
-    /* background-image: linear-gradient(to bottom, transparent 40%, #FF9463), url("./cardBgImg.jpg"); */
+.lowerText > .detail {
+  height: 0px;
+  color: transparent;
+  transition: all 1s;
 }
 
 .container:hover > .cardContainer {
@@ -59,3 +57,13 @@
 .container:hover .lowerText {
   height: 60px;
 }
+
+.container:hover .lowerText > .detail {
+  height: 20px;
+  color:#EB4900; 
+}
+
+
+
+
+

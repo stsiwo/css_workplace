@@ -6,11 +6,11 @@ class Card extends React.Component {
     return (
       <div className={ styles.container }>
         <div className={ styles.cardContainer }>
-          <div className={ styles.upperText }><span>title</span></div>
+          <div className={ styles.upperText }>title</div>
           <div className={ styles.lowerText }>
-            <div className={ styles.detail1 }><span>detail 1</span></div>
-            <div className={ styles.detail2 }><span>detail 2</span></div>
-            <div className={ styles.detail3 }><span>detail 3</span></div>
+            <div className={ styles.detail }>detail 1</div>
+            <div className={ styles.detail }>detail 2</div>
+            <div className={ styles.detail }>detail 3</div>
           </div>
         </div>
       </div>  
