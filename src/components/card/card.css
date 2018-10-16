@@ -12,7 +12,6 @@
 
 .cardContainer {
   width: 100%;
-  height: 20px;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -31,37 +30,49 @@
   font-size: 18px;
 }
 
-
-.lowerText {
-  width: 100%;
-  height: 0px;
-  transition: height 1s;
-  border-radius: 0 0 20px 20px;
-  color:#EB4900; 
-}
-
-.lowerText > .detail {
-  height: 0px;
-  color: transparent;
+.lowerText * {
+  max-height: 0px;
   transition: all 1s;
+  color: transparent;
 }
 
-.container:hover > .cardContainer {
-  height: 80px;
+.container:hover .lowerText * {
+  max-height: 20px;  /* try to match actual height as much as possible to make animation works well */ 
+  color: #EB4900;
 }
 
-.container:hover .upperText {
-  border-radius: 0;
-}
 
-.container:hover .lowerText {
-  height: 60px;
-}
 
-.container:hover .lowerText > .detail {
-  height: 20px;
-  color:#EB4900; 
-}
+/* .lowerText { */
+/*   width: 100%; */
+/*   height: 20px; */
+/*   transition: height 1s; */
+/*   border-radius: 0 0 20px 20px; */
+/*   color:#EB4900; */ 
+/* } */
+
+/* .lowerText > .detail { */
+/*   height: 0px; */
+/*   color: transparent; */
+/*   transition: all 1s; */
+/* } */
+
+/* .container:hover > .cardContainer { */
+/*   height: 80px; */
+/* } */
+
+/* .container:hover .upperText { */
+/*   border-radius: 0; */
+/* } */
+
+/* .container:hover .lowerText { */
+/*   height: 60px; */
+/* } */
+
+/* .container:hover .lowerText > .detail { */
+/*   height: 20px; */
+/*   color:#EB4900; */ 
+/* } */
 
 
 
