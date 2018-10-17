@@ -53,28 +53,29 @@
 }
 
 .container:hover > .overlayTop {
-   transform: translateY(150px);
+  transform: translateY(150px);
 }
 
 .container:hover > .overlayBottom {
-   transform: translateY(-150px);
+  transform: translateY(-150px);
 }
 
 .container:hover > .overlayLeft {
-   transform: translateX(150px);
+  transform: translateX(150px);
 }
 
 .container:hover > .overlayRight {
-   transform: translateX(-150px);
+  transform: translateX(-150px);
 }
 
 .overlayContent {
-   text-align: center;
-   color: white;
-   opacity: 0;
-   transition: opacity 2s;
-   height: 100%;
-   width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 2s;
+  height: 100%;
+  width: 100%;
 }
 
 .detail {
