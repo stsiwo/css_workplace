@@ -2,7 +2,7 @@ import './style.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import SearchBox from './components/searchBox/SearchBox';
-import GridLayout from './components/gridLayout/GridLayout';
+import Overlay from './components/overlay/Overlay';
 
 // need to place to put html 
 // option 1: cast out html webpack plugin and insert html manually
@@ -16,7 +16,7 @@ import GridLayout from './components/gridLayout/GridLayout';
 // </div>
 
 
-ReactDOM.render(<GridLayout />, document.getElementById("root"));
+ReactDOM.render(<Overlay />, document.getElementById("root"));
 
 if (module.hot) {
   module.hot.accept('./index.js', function() {
